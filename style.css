@@ -1,6 +1,7 @@
 body {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     background-color: #857DB1 !important;
 }
 
@@ -11,3 +12,16 @@ header h1 {
     font-family: 'Press Start 2P', cursive;
     font-size: 40px;
 }
+
+section {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+section div {
+    background-color: white;
+    padding: 20px;
+}
+

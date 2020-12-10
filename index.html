@@ -20,10 +20,28 @@
     </header>
 
     <main>
-        <div class="searchBox">
-            <!-- <input type="search" name="" id=""> -->
+        <div class="searchBox text-center">
+            <input type="search" name="searchWiki" id="" class="w-75 p-1 searchInput" placeholder="Search for something, anything">
+            <button type="submit" class="btn btn-primary p-1 btn-lg goBtn">Go</button>
 
         </div>
+
+        <div class="visible d-flex justify-content-center"id="loaderDiv">
+
+        </div>
+        <section class="invisible">
+            <div>
+                <h1 class="searchTitle"></h1>
+                <p class="searchParagraph1"></p>
+                <p class="searchParagraph2"></p>
+                <p class="searchParagraph3"></p>
+                <p class="searchParagraph4"></p>
+                <p class="searchParagraph5"></p>
+
+
+                <a class="btn btn-outline-dark findMor" href="#" role="button" target="_blank">Find out more?</a>
+            </div>
+        </section>
     </main>
     <script src="script.js"></script>
 </body>
