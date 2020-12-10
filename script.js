@@ -5,6 +5,7 @@ let searchBody2 = document.querySelector('.searchParagraph2');
 let searchBody3 = document.querySelector('.searchParagraph3');
 let searchBody4 = document.querySelector('.searchParagraph4');
 let searchBody5 = document.querySelector('.searchParagraph5');
+let searchText = document.querySelector('.searchInput');
 let findMore = document.querySelector('.findMor');
 let goButton = document.querySelector('.goBtn');
 let loaderDiv = document.querySelector("#loaderDiv");
@@ -56,10 +57,10 @@ function searchAfterClick() {
 }
 
 function searchAfterEnter(event) {
-    if(event.keyCode === 13) {
+    if(event.keyCode === 13 && searchText.value.length > 0) {
         searchResult();
     }
 }
 
 goButton.addEventListener("click", searchAfterClick);
-// searchText.addEventListener("keypress", searchAfterEnter);
+searchText.addEventListener("keypress", searchAfterEnter);
