@@ -39,7 +39,7 @@ function searchResult() {
     console.log(searchText);
     loaderDiv.classList.replace('visible', 'invisible');
     document.querySelector('section').classList.replace('invisible', 'visible');
-    searchTitle.innerText = data.query.search[0].title;
+    searchTitle.innerText = `${searchText}`;
     searchBody.innerHTML= `1. ${data.query.search[0].snippet}`;
     searchBody2.innerHTML= `2. ${data.query.search[1].snippet}`;
     searchBody3.innerHTML= `3. ${data.query.search[2].snippet}`;
